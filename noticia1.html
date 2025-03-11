@@ -3,60 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYNX: Novo Framework - Portal de Notícias</title>
+    <title>LYNX: Novo Framework - TechZone News</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Portal de Notícias</h1>
+        <a href="site.html" class="home-button">Home</a>
+        <h1>TechZone News</h1>
         <nav>
             <ul></ul>
         </nav>
     </header>
 
-    <main>
-        <article>
-            <h2>Conheça o LYNX, Novo concorrente do React e Flutter</h2>
+    <div class="content-wrapper">
+        <main>
+            <article>
+                <h2>Conheça o LYNX, Novo concorrente do React e Flutter</h2>
+                
+                <img src="https://pbs.twimg.com/media/Glqe0lLacAAoBnX.jpg" alt="Logo e interface do framework LYNX">
+                
+                <p class="meta-info">Autor: Fulano | Publicado em: 10/03/2025</p>
+
+                <h3>Introdução ao LYNX</h3>
+
+                <p>A ByteDance, empresa por trás do TikTok, lançou o Lynx, uma nova estrutura para desenvolvimento de aplicativos móveis baseada em Rust. O Lynx oferece suporte a várias plataformas, desempenho aprimorado e recursos fáceis de usar graças à sua marcação e suporte a CSS.</p>
+
+                <h3>Recursos e Funcionalidades</h3>
+
+                <p>O Lynx permite que os desenvolvedores criem interfaces nativas usando uma abordagem declarativa, semelhante ao React Native, mas com o poder e o desempenho do Rust. Em um exemplo, uma tela de login é criada usando o Lynx, mostrando seu suporte a CSS, hooks, diretivas de thread e componentes HTML.</p>
+
+                <p>De acordo com o autor, o Lynx fornece uma experiência de desenvolvimento nativo rápida e eficiente, com suporte avançado a CSS e recursos da web. Embora o autor tenha algumas reservas sobre o processo de configuração do projeto, ele acredita que o Lynx tem o potencial de revolucionar o desenvolvimento de aplicativos móveis.</p>
+
+                <h3>Principais Características</h3>
+
+                <h4>Desenvolvimento semelhante à Web</h4>
+                <p>Os desenvolvedores podem criar UIs usando marcação (semelhante ao HTML) e CSS para estilização, facilitando a transição do desenvolvimento da Web para o celular.</p>
+
+                <h4>Otimização de desempenho multithread</h4>
+                <p>A arquitetura dual-thread do Lynx separa a renderização da IU da lógica de negócios, eliminando o gargalo da ponte JavaScript no React Native e melhorando as atualizações da IU, a suavidade da animação e os tempos de carregamento do aplicativo.</p>
+
+                <h4>Estrutura da IU baseada em componentes</h4>
+                <p>O Lynx usa um modelo de componente orientado a marcação que mapeia para contrapartes de plataforma nativa, com suporte integrado para CSS nativo e temas.</p>
+
+                <h3>Uso em Produção</h3>
+
+                <p>O Lynx foi projetado para desenvolvimento de aplicativos multiplataforma de alto desempenho, e sua filosofia web-first e design focado em desempenho visam simplificar o processo de desenvolvimento. O Lynx já está sendo usado em produção dentro do ecossistema TikTok, indicando um futuro promissor para a estrutura.</p>
+
+                <h3>Como Começar</h3>
+
+                <p>Para começar a usar o Lynx, os desenvolvedores podem usar o Rspeedy, uma ferramenta de construção com tecnologia Rust baseada no Rspack, para agrupamento e compilação de alta velocidade. O Lynx Explorer também está disponível como um ambiente sandbox para executar e testar aplicativos Lynx.</p>
+
+                <p>À medida que o desenvolvimento móvel avança para atender às crescentes demandas de experiências orientadas por IA, interfaces de RA/RV imersivas e soluções de nuvem perfeitamente integradas, a abordagem nativa da Web do Lynx e a execução baseada em Rust oferecem uma solução flexível e eficiente para criar a próxima geração de aplicativos multiplataforma de alto desempenho.</p>
+            </article>
+        </main>
+
+        <aside class="related-news">
+            <h3>Outras Notícias</h3>
             
-            <img src="https://pbs.twimg.com/media/Glqe0lLacAAoBnX.jpg" alt="Logo e interface do framework LYNX">
-            
-            <p class="meta-info">Autor: Fulano | Publicado em: 10/03/2025</p>
+            <div class="related-card">
+                <a href="noticia2.html">
+                    <img src="https://indiandefencereview.com/wp-content/uploads/2025/03/Manus.jpg" alt="Interface do Manus AI">
+                    <h4>O que é Manus AI? Agente de IA chinês funciona de forma autônoma</h4>
+                    <p>Nova inteligência artificial é capaz de traçar estratégias, agir e refinar suas próprias decisões sem intervenção humana</p>
+                </a>
+            </div>
 
-            <h3>Introdução ao LYNX</h3>
-
-            <p>A ByteDance, empresa por trás do TikTok, lançou o Lynx, uma nova estrutura para desenvolvimento de aplicativos móveis baseada em Rust. O Lynx oferece suporte a várias plataformas, desempenho aprimorado e recursos fáceis de usar graças à sua marcação e suporte a CSS.</p>
-
-            <h3>Recursos e Funcionalidades</h3>
-
-            <p>O Lynx permite que os desenvolvedores criem interfaces nativas usando uma abordagem declarativa, semelhante ao React Native, mas com o poder e o desempenho do Rust. Em um exemplo, uma tela de login é criada usando o Lynx, mostrando seu suporte a CSS, hooks, diretivas de thread e componentes HTML.</p>
-
-            <p>De acordo com o autor, o Lynx fornece uma experiência de desenvolvimento nativo rápida e eficiente, com suporte avançado a CSS e recursos da web. Embora o autor tenha algumas reservas sobre o processo de configuração do projeto, ele acredita que o Lynx tem o potencial de revolucionar o desenvolvimento de aplicativos móveis.</p>
-
-            <h3>Principais Características</h3>
-
-            <h4>Desenvolvimento semelhante à Web</h4>
-            <p>Os desenvolvedores podem criar UIs usando marcação (semelhante ao HTML) e CSS para estilização, facilitando a transição do desenvolvimento da Web para o celular.</p>
-
-            <h4>Otimização de desempenho multithread</h4>
-            <p>A arquitetura dual-thread do Lynx separa a renderização da IU da lógica de negócios, eliminando o gargalo da ponte JavaScript no React Native e melhorando as atualizações da IU, a suavidade da animação e os tempos de carregamento do aplicativo.</p>
-
-            <h4>Estrutura da IU baseada em componentes</h4>
-            <p>O Lynx usa um modelo de componente orientado a marcação que mapeia para contrapartes de plataforma nativa, com suporte integrado para CSS nativo e temas.</p>
-
-            <h3>Uso em Produção</h3>
-
-            <p>O Lynx foi projetado para desenvolvimento de aplicativos multiplataforma de alto desempenho, e sua filosofia web-first e design focado em desempenho visam simplificar o processo de desenvolvimento. O Lynx já está sendo usado em produção dentro do ecossistema TikTok, indicando um futuro promissor para a estrutura.</p>
-
-            <h3>Como Começar</h3>
-
-            <p>Para começar a usar o Lynx, os desenvolvedores podem usar o Rspeedy, uma ferramenta de construção com tecnologia Rust baseada no Rspack, para agrupamento e compilação de alta velocidade. O Lynx Explorer também está disponível como um ambiente sandbox para executar e testar aplicativos Lynx.</p>
-
-            <p>À medida que o desenvolvimento móvel avança para atender às crescentes demandas de experiências orientadas por IA, interfaces de RA/RV imersivas e soluções de nuvem perfeitamente integradas, a abordagem nativa da Web do Lynx e a execução baseada em Rust oferecem uma solução flexível e eficiente para criar a próxima geração de aplicativos multiplataforma de alto desempenho.</p>
-        </article>
-    </main>
+            <div class="related-card">
+                <a href="noticia3.html">
+                    <img src="https://belenos.me/media/2024-07-iniciativa-ladybird.webp" alt="Logo do navegador Ladybird">
+                    <h4>Novo Navegador Ladybird Promete Revolucionar a Web</h4>
+                    <p>O cenário dos navegadores da web está prestes a mudar com uma nova alternativa independente</p>
+                </a>
+            </div>
+        </aside>
+    </div>
 
     <footer>
-        <p>&copy; 2023 Portal de Notícias. Todos os direitos reservados.</p>
+        <p>&copy; 2025 TechZone News. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
